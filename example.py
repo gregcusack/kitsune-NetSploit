@@ -184,7 +184,7 @@ if __name__ == "__main__":
         RMSEs[i] = K.process(X[i,], execute_flag) #will train during the grace periods, then execute on all the rest.
         #print(RMSEs[i])
         anomList[i%window] = RMSEs[i]/phi
-        
+
         if execute_flag:# or test_flag:
             if RMSEs[i]/phi > 1:
                 anomalies.append((i,RMSEs[i]/phi))
@@ -196,7 +196,7 @@ if __name__ == "__main__":
             execute_results.append(anomFlag)
             #if loopCount == 4:
             #    exit()
-                
+
             #if(sum(i > 1 for i in anomList) >= anomThresh):
             #    print("--------------Anomaly detected.  Error.----------------")
             #    print("i: {}".format(i))

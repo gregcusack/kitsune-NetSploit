@@ -10,7 +10,7 @@ class GetFeatures:
 
 
     def runner(self):
-        self.train_files = self.get_feature_files('monday','../Mohammad-Kitsune/115_features_new/')
+        self.train_files = self.get_feature_files('monday','../Mohammad-Kitsune/test/')
         print(self.train_files)
         self.get_files()
         self.train_x = np.concatenate(self.train_x, axis=0)
