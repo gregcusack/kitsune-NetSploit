@@ -1,0 +1,7 @@
+*.pcap
+*.pkl
+venv/
+__pycache__/
+.idea/
+*.csv
+
